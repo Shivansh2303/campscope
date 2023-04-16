@@ -1,0 +1,260 @@
+*{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header nav{
+    display: flex;
+    background-color: aquamarine;
+    height: 76px;
+    /* border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px; */
+   flex-wrap: wrap;
+    
+      justify-content: center;
+      width: 1262px;
+      box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.8);
+      border-top: 1px  solid rgba(255,255,255,0.5);
+      border-left: 1px  solid rgba(255,255,255,0.5);
+      backdrop-filter: blur(5px);
+      margin-top: -456px;
+     
+
+}
+header nav h1{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2px;
+    font-size: 44px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 6px;
+    /* border: 2px solid red;
+   border-bottom-right-radius: 43px;
+   border-top-right-radius: 43px; */
+ 
+    
+   
+}
+header  .icon1 img{
+    position: relative;
+    height: 70px;
+    width: 70px;
+    margin-top: -93px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    
+  
+    
+   
+}
+header .icon1{
+    margin-top: 20px;
+    margin-left: 5px;
+    cursor: pointer;
+    
+    
+
+}
+ 
+header .icon1 h1{
+    display: inline;
+    
+    margin-top: 10px;
+    
+    display: block;
+    /* border: 2px solid rgb(244, 238, 238); */
+   /* height: 4px; */
+    /* width: ; */
+    padding: 7px;
+    /* text-indent: 25px; */
+    border-radius: 23px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.5em;
+    color: rgba(23, 10, 209, 0.9);
+    pointer-events: none;
+    margin-left: -12px;
+   
+   
+}
+header .icon1 h3{
+    display: inline;
+    
+    margin-top: -42px;
+   text-align: center;
+    display: inline;
+    /* border: 2px solid rgb(244, 238, 238); */
+   /* height: 4px; */
+    /* width: ; */
+    padding: 7px;
+    /* text-indent: 25px; */
+    border-radius: 23px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.0em;
+    color: rgba(23, 10, 209, 0.9);
+    pointer-events: none;
+    border: 2px solid red;
+    
+   
+   
+}
+header .icon1 h2{
+    margin-left: 2em;
+    font-size: 53px;
+    color: rgba(238, 255, 5, 0.5);
+    pointer-events: none;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 160vh;
+    /* background: linear-gradient(45deg, #ffaf00, #bb02ff); */
+    background-color: rgb(215, 237, 236);
+}
+.container{
+    position: absolute;
+    width: 1150px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* margin-top: 323px; */
+    margin-top: -12rem;
+
+}
+.container .card{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background:#fff ;
+    margin: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.container:hover .card{
+    filter: blur(0px); 
+    transform: scale(0.9);
+    opacity: 0.5;
+}
+.container .card:hover{
+    filter: blur(0px);
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.container .card .circle{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    background: orange;
+    clip-path: circle(100px at center 0);
+    text-align: center;
+}
+.container .card .circle h2{
+    color: #fff;
+    font-size: 2.2em;
+    padding:30px 0;
+}
+.container .card .content{
+    position: relative;
+    margin-top: 7px;
+   
+    text-align: center;
+    
+}
+.container .card .content p{
+    color: #666;
+    font-size: 2em;
+}
+.container .card .content a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background: #000;
+    color: white;
+    border-radius: 40px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.container .card:nth-child(1) .circle{
+    background: #ffaf00;
+}
+.container .card:nth-child(2) .circle{
+    background: #2fcd21;
+}
+.container .card:nth-child(3) .circle{
+    background: #0bafeb;
+}
+.container .card:nth-child(4) .circle{
+    background: #761c88;
+}
+.container .card:nth-child(5) .circle{
+    background: #d31296;
+}
+.container .card:nth-child(6) .circle{
+    background: #3313c1;
+}
+.container .card:nth-child(7) .circle{
+    background: #ea19f1;
+}
+
+.container footer .next{
+   display: flex;
+   border: 2px solid red;
+   padding: 5px;
+   margin-left: 22px;
+   border-radius: 5px;
+   text-decoration: none;
+   
+    
+}
+.container footer .next a{
+    text-decoration: none;
+    color: black;
+}
+.container footer .next a:hover{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.container footer .next:hover{
+    background-color:red;
+   
+}
+hr{
+    border: 1px solid red;
+ }
+ #top h3{
+     display: flex;
+     /* float: right; */
+     color: black;
+     justify-content: right;
+
+ }
+ #top h3 a{
+     color: black;
+ }
+ #top h3 a:hover{
+     color: rgb(93, 90, 90);
+     cursor: pointer;
+ }
+ #top h1{
+     word-spacing: 39rem;
+     margin-bottom: 0rem;
+ }
+ #top a{
+     color: orange;
+ }
+
+ #top {
+    margin-top: -26rem;
+    /* margin-left: -12rem; */
+ }
+ 

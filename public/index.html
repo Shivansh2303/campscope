@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="home.css">
+
+    <!-- box-color -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<style>
+.navbar .greeting{
+    float: right;
+    color: white;
+    margin-left: 55px;
+    border-left: 2px solid orange;
+    height: 24px;
+    font-size: 19px;
+    
+   
+
+}
+
+</style>
+<body>
+
+    <header class="header">
+        <a href="a" class="logo">Camp<span>Scope</span></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#Home">Home</a>
+
+            <a href="./services/services.html">Services</a>
+            <a href="./Gallery/Gallery.html">Gallery</a>
+            <a href="./About Mentor/Mentor.html">About Mentor</a>
+            <a href="./Contacts us form/contact.html">Contact</a>
+            
+            
+
+        </nav>
+    </header>
+    <!-- Home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+
+
+            <h3>Welcome, To </h3>
+            <h1><span>Campscope</span> Community</h1>
+            <h3>Here You Get All Material releted to Your Acadmic </h3>
+           
+            <a href="login.html" class="btn">Login</a>
+        </div>
+    </section>
+
+
+    <div class="book">
+        <input type="checkbox" id="c1">
+        <input type="checkbox" id="c2">
+        <input type="checkbox" id="c3">
+        <div id="cover"><img src=".//img/Electrical.jpg"></div>
+        <div class="flip-book">
+            <div class="flip" id="p1">
+                <div class="back">
+                    <img src=".//img/Cse.jpg">
+                    <label class="back-btn" for="c1">Back</label>
+                </div>
+                <div class="front">
+                    <h2>Electrical</h2>
+                    <p>Electrical Engineering is defined as the study, design, and application of equipment, devices, and systems, which use electricity, electronics, and electromagnetism.  Electrical engineering serves to create innovative electrical systems that enable and enhance modern society while addressing technical and social problems.</p>
+                    <label class="next-btn" for="c1">Next</label>
+                </div>
+            </div>
+            <div class="flip" id="p2">
+                <div class="back">
+                    <img src=".//img/Electronics.jpg">
+                    <label class="back-btn" for="c2">Back</label>
+                </div>
+                <div class="front">
+                    <h2>CSE</h2>
+                    <p>Computer Science Engineering is one of the most popular engineering branches that deals with the design, development, and application of computer hardware and software. It involves the development of computer systems, software applications, programming languages, algorithm design, and database management systems.</p>
+                    <label class="next-btn" for="c2">Next</label>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="flip" id="p3">
+                <div class="back">
+                    <label class="back-btn" for="c3">Back</label>
+                </div>
+                <div class="front">
+                    <h2>Electronics</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet architecto nam aliquam illum
+                        voluptatibus, eius, nobis ab aspernatur, dolore praesentium nesciunt laboriosam iste officiis
+                        voluptas unde maiores numquam voluptatem provident.laboriosam iste officiis voluptas unde
+                        maiores numquam voluptatem provident.laboriosam iste officiis voluptas</p>
+                    <label class="next-btn" for="c3">Next</label>
+                </div>
+            </div>
+            <div class="flip" id="p3">
+                <div class="back">
+                    <label class="back-btn" for="c3">Back</label>
+                </div>
+                <div class="front">
+                    <h2>Electronics</h2>
+                    <p>Electronics engineering is a branch of engineering that deals with the design, development, and application of electronic devices, circuits, and systems. It involves the study of semiconductor materials, transistors, diodes, integrated circuits, and other devices and systems that use electricity.</p>
+                        <label class="next-btn" for="c3">Next</label>
+                    </div>
+                </div>
+                <footer>
+                  Copyright &copy; www.Cam <span>Scope</span>.Com All Right Reserved!
+                </footer>
+            </div>
+        </div>
+
+
+
+
+    
+</body>
+</html>

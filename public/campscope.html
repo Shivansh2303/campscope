@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>CampScope</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<style>
+    button {
+        border: 2px solid white;
+        padding: 9px;
+        border-radius: 12px;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 18px;
+      box-shadow: 0 0 0.7rem rgb(235, 115, 10);
+      transition: .5s ease;
+      
+       
+
+    }
+    button:hover{
+        box-shadow: none;
+        color: orange;
+        cursor: pointer;
+    }
+    .logout-btn{
+        display: flex;
+        justify-content: right;
+        text-align: right;
+        margin-top: -63rem;
+        margin-right: 2rem;
+    }
+.great-user {
+    float: left;
+    margin-top: -2.58rem;
+    margin-left: 53rem;
+}
+.great-user h1{
+    color: rgb(11, 175, 207);
+}
+    
+</style>
+<body>
+   
+    
+    <div class="btn">
+        <span class="fas fa-bars"></span>
+       
+    </div>
+    <nav class="sidebar">
+        <div class="text">
+            Camp <span>scope</span>
+            
+        </div>
+        
+        <ul>
+            <li class="active"><a href="#">Department</a></li>
+            <li>
+                <a href="#" class="feat-btn">EE
+                    <span class="fas fa-caret-down first"></span>
+                </a>
+                <ul class="feat-show">
+                    <li><a href="./materialcampscope/material.html">1st Year</a></li>
+                    <li><a href="./materialcampscope/material 2nd.html">2nd Year</a></li>
+                    <li><a href="./materialcampscope/material 3rd.html">3rd Year</a></li>
+                    <li><a href="./materialcampscope/material 4th.html">4th Year</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="serv-btn">EE(IOT)
+                    <span class="fas fa-caret-down second"></span>
+                </a>
+                <ul class="serv-show">
+                    <li><a href="./materialcampscope/material.html">1st Year</a></li>
+                    <li><a href="./materialcampscope/material 2nd.html">2nd Year</a></li>
+                    <li><a href="./materialcampscope/material 3rd.html">3rd Year</a></li>
+                    <li><a href="./materialcampscope/material 4th.html">4th Year</a></li>
+                </ul>
+            </li>
+
+            <!-- cse -->
+            <li>
+                <a href="#" class="cse-btn">CSE
+                    <span class="fas fa-caret-down third"></span>
+                </a>
+                <ul class="cse-show">
+                    <li><a href="./materialcampscope/material.html">1st Year</a></li>
+                    <li><a href="./materialcampscope/material 2nd.html">2nd Year</a></li>
+                    <li><a href="./materialcampscope/material 3rd.html">3rd Year</a></li>
+                    <li><a href="./materialcampscope/material 4th.html">4th Year</a></li>
+                </ul>
+            </li>
+            <!-- IT -->
+            <li>
+                <a href="#" class="it-btn">IT
+                    <span class="fas fa-caret-down fourth"></span>
+                </a>
+                <ul class="it-show">
+                    <li><a href="./materialcampscope/material.html">1st Year</a></li>
+                    <li><a href="./materialcampscope/material 2nd.html">2nd Year</a></li>
+                    <li><a href="./materialcampscope/material 3rd.html">3rd Year</a></li>
+                    <li><a href="./materialcampscope/material 4th.html">4th Year</a></li>
+                </ul>
+            </li>
+            <!-- IT(IOT) -->
+            <li>
+                <a href="#" class="iot-btn">IT(IOT)
+                    <span class="fas fa-caret-down fifth"></span>
+                </a>
+                <ul class="iot-show">
+                    <li><a href="./materialcampscope/material.html">1st Year</a></li>
+                    <li><a href="./materialcampscope/material 2nd.html">2nd Year</a></li>
+                    <li><a href="./materialcampscope/material 3rd.html">3rd Year</a></li>
+                    <li><a href="./materialcampscope/material 4th.html">4th Year</a></li>
+                </ul>
+            </li>
+            <!-- ME -->
+            <li>
+                <a href="#" class="me-btn">ME
+                    <span class="fas fa-caret-down sixth"></span>
+                </a>
+                <ul class="me-show">
+                    <li><a href="./materialcampscope/material.html">1st Year</a></li>
+                    <li><a href="./materialcampscope/material 2nd.html">2nd Year</a></li>
+                    <li><a href="./materialcampscope/material 3rd.html">3rd Year</a></li>
+                    <li><a href="./materialcampscope/material 4th.html">4th Year</a></li>
+                </ul>
+            </li>
+            <!-- CE -->
+            <li>
+                <a href="#" class="ce-btn">CE
+                    <span class="fas fa-caret-down seventh"></span>
+                </a>
+                <ul class="ce-show">
+                    <li><a href="./materialcampscope/material.html">1st Year</a></li>
+                    <li><a href="./materialcampscope/material 2nd.html">2nd Year</a></li>
+                    <li><a href="./materialcampscope/material 3rd.html">3rd Year</a></li>
+                    <li><a href="./materialcampscope/material 4th.html">4th Year</a></li>
+                </ul>
+            </li>
+            <!-- CHE -->
+            <li>
+                <a href="#" class="che-btn">CHE
+                    <span class="fas fa-caret-down eight"></span>
+                </a>
+                <ul class="che-show">
+                    <li><a href="./materialcampscope/material.html">1st Year</a></li>
+                    <li><a href="./materialcampscope/material 2nd.html">2nd Year</a></li>
+                    <li><a href="./materialcampscope/material 3rd.html">3rd Year</a></li>
+                    <li><a href="./materialcampscope/material 4th.html">4th Year</a></li>
+                </ul>
+            </li>
+            <!-- EC -->
+            <li>
+                <a href="#" class="ec-btn">EC
+                    <span class="fas fa-caret-down nine"></span>
+                </a>
+                <ul class="ec-show">
+                    <li><a href="./materialcampscope/material.html">1st Year</a></li>
+                    <li><a href="./materialcampscope/material 2nd.html">2nd Year</a></li>
+                    <li><a href="./materialcampscope/material 3rd.html">3rd Year</a></li>
+                    <li><a href="./materialcampscope/material 4th.html">4th Year</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+    </nav>
+    <header class="header">
+       <h2>Camp <span>Scope</span></h2>
+    </header>
+
+    <div class="container">
+        <h3>Camp<span>Scope</span>, the Socio-Academic Portal of MITS. We aim to make the life of every MITSian simpler & turn these four years into a smoother ride!</h3>
+    </div>
+
+    <div class="cover">
+        <div class="box">
+            <img src="./img/logo1.jpeg" alt="">
+            <h2>Who are we?</h2>
+            <p>A bunch of curious, enthusisatic and motivated college students, who work together to build solutions to problems that we face every day.
+                We build & manage products!</p>
+        </div>
+        <div class="box">
+            <img src="./img/logo2.jpeg" alt="">
+            <h2>What have we been upto?</h2>
+            <p>CampScope has been the one-stop solution for students the night before exam. We're now building ExamScope, LearnScope and the ClassScope App</p>
+        </div>
+        <div class="box">
+            <img src="./img/logo1.jpeg" alt="">
+            <h2>Whom will you meet at <span>EE?</span> </h2>
+            <p>A bunch of curious, enthusisatic and motivated college students, who work together to build solutions to problems that we face every day.
+                We build & manage products!</p>
+        </div>
+        <div class="box">
+            <img src="./img/logo2.jpeg" alt="">
+            <h2>Why should you join <span>EE?</span></h2>
+            <p>A bunch of curious, enthusisatic and motivated college students, who work together to build solutions to problems that we face every day.
+                We build & manage products!</p>
+        </div>
+    </div>
+    <div class="logout-btn">
+        <button class="logout">log out</button>
+    </div>
+    <div class="great-user">
+
+        <h1 class="greeting"></h1>
+    </div>
+    <script>
+        $('.btn').click(function () {
+            $(this).toggleClass("click");
+            $('.sidebar').toggleClass("show");
+        });
+        $('.feat-btn').click(function () {
+            $('nav ul .feat-show').toggleClass("show");
+            $('nav ul .first').toggleClass("rotate");
+        });
+        $('.serv-btn').click(function () {
+            $('nav ul .serv-show').toggleClass("show1");
+            $('nav ul .second').toggleClass("rotate");
+        });
+        $('.cse-btn').click(function () {
+            $('nav ul .cse-show').toggleClass("show2");
+            $('nav ul .third').toggleClass("rotate");
+        });
+        $('.it-btn').click(function () {
+            $('nav ul .it-show').toggleClass("show3");
+            $('nav ul .fourth').toggleClass("rotate");
+        });
+        $('.iot-btn').click(function () {
+            $('nav ul .iot-show').toggleClass("show4");
+            $('nav ul .fifth').toggleClass("rotate");
+        });
+        $('.me-btn').click(function () {
+            $('nav ul .me-show').toggleClass("show5");
+            $('nav ul .sixth').toggleClass("rotate");
+        });
+        $('.ce-btn').click(function () {
+            $('nav ul .ce-show').toggleClass("show6");
+            $('nav ul .seventh').toggleClass("rotate");
+        });
+        $('.che-btn').click(function () {
+            $('nav ul .che-show').toggleClass("show7");
+            $('nav ul .eight').toggleClass("rotate");
+        });
+        $('.ec-btn').click(function () {
+            $('nav ul .ec-show').toggleClass("show8");
+            $('nav ul .nine').toggleClass("rotate");
+        });
+        $('nav ul li').click(function () {
+            $(this).addClass("active").siblings().removeClass("active");
+        });
+    </script>
+</body>
+<script src="js/home.js"></script>
+
+
+</html>

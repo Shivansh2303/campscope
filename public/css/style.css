@@ -1,0 +1,255 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:root{
+    --bg-color:#1f242d;
+    --second-bg-color:#323946;
+    --text-color:#0b0b0b;
+    --main-color: rgb(0, 0, 0);
+
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+    background-color: rgb(215, 237, 236);
+    color: var(--text-color);
+    display: flex;
+    
+}
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem ;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 600;
+    cursor: default;
+
+
+}
+.navbar a{
+    font-size: 1.7rem;
+    color: #fff;
+    margin-left: 4rem;
+    font-weight: 600;
+}
+.navbar a:hover,
+.navbar a.Active { 
+    color:var(--main-color);
+}
+#menu-icon{
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+
+}
+.home{ 
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.navbar .logout {
+    float: right;
+    /* border: 2px solid red; */
+    border-radius: 12px;
+    padding: 8px;
+    /* margin-left: 50px; */
+    margin-right: -80px;
+    
+}
+.home-img img{
+    width: 342px;
+    height: 342px;
+    border: 2px solid rgb(215, 237, 236) ;
+    border-radius: 123px;
+}
+.home-content h3{
+    font-size: 3.2rem ;
+    font-weight: 700;
+}
+span {
+    color: rgb(219, 150, 65);
+
+}
+.home-content h1{
+    font-size: 5.6rem;
+    font-weight: 700;
+    /* line-height: 1.7; */
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: rgb(222, 199, 170);
+    border: 4rem;
+    box-shadow: 0 0 1rem red;
+    font-size: 1.6rem;
+    color: black;
+    letter-spacing: .1rem;
+    font-weight: 600; 
+    border-radius: 1rem;
+    transition: .5s ease;
+   margin-top: 3rem;
+}
+
+.btn:hover{
+    box-shadow: none;
+}
+img{
+    width: 242px;
+    height: 400px;
+}
+/* .container{
+    height: 30vh;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background:linear-gradient(90deg, #fff 50%, #4a1010 50%);
+} */
+input{
+	display: none;
+}
+img{
+	width: 100%;
+	height: 100%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.book{
+	display: flex;
+    margin-top: 12rem;
+    margin-right: 4rem;
+}
+#cover{
+	width: 250px;
+	height: 400px;
+}
+.flip-book{
+	width: 250px;
+	height: 400px;
+	position: relative;
+	perspective: 1500px;
+}
+.flip{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform-origin: left;
+	transform-style: preserve-3d;
+	transform: rotateY(0deg);
+	transition: .5s;
+	color: #000;
+}
+p{
+	font-size: 14px;
+	line-height: 24px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align:justify;
+}
+footer{
+    font-size: 2rem;
+    float: left;
+    margin-top: 45rem;
+    margin-left: -53rem;
+}
+.front{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	box-sizing: border-box;
+	padding: 0 13px;
+	box-shadow: inset 20px 0 50px rgba(0,0,0,0.5) 0 2px 5px rgba(0,0,0,.5);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.front h2{
+    margin-top: 3rem;
+    font-size: 2rem;
+    /* line-height: 2.5rem; */
+    color: orange;
+    
+}
+.back{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
+	background: #000;
+    font-size: 1.7rem;
+}
+.next-btn{
+	position: absolute;
+	bottom: 13px;
+	right: 13px;
+	cursor: pointer;
+	color: #000;
+    font-size: 1.7rem;
+}
+.back-btn{
+	position: absolute;
+	bottom: 13px;
+	right: 13px;
+	cursor: pointer;
+	color: #fff;
+}
+#p1{
+	z-index: 3;
+}
+#p2{
+	z-index: 2;
+}
+#p3{
+	z-index: 1;
+}
+
+#c1:checked ~ .flip-book #p1{
+	transform: rotateY(-180deg);
+	z-index: 1;
+}
+#c2:checked ~ .flip-book #p2{
+	transform: rotateY(-180deg);
+	z-index: 2;
+}
+#c3:checked ~ .flip-book #p3{
+	transform: rotateY(-180deg);
+	z-index: 3;
+}
+section .services{
+   border: 2px solid red;
+}
